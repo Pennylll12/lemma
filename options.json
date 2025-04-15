@@ -1,0 +1,453 @@
+{
+    "propertyTypes": {
+        "kai_yin_a_01": {
+            "name": "啟欣苑A座01室",
+            "image": "啟欣苑a座01室.png",
+            "maxRooms": 1
+        },
+        "kai_yin_a_06": {
+            "name": "啟欣苑A座06室",
+            "image": "啟欣苑a座06室.png",
+            "maxRooms": 2
+        },
+        "kai_yin_a_11": {
+            "name": "啟欣苑A座11室",
+            "image": "啟欣苑a座11室.png",
+            "maxRooms": 1
+        },
+        "kai_chuen_3_05": {
+            "name": "啟鑽苑3座05室",
+            "image": "啟鑽苑3座05室.png",
+            "maxRooms": 3
+        }
+    },
+    "bathroom": {
+        "title": "請選擇廁所進行項目",
+        "type": "single",
+        "options": [
+            {
+                "id": "bathroom_full_renovation",
+                "name": "廁所全拆",
+                "description": [
+                    "清拆原有洗手間內厠櫃,潔具及假天花",
+                    "洗手間內牆身磚，地台磚及企/浴缸",
+                    "清拆後泥頭癈料清走"
+                ],
+                "sub_options": {
+                    "title": "請選擇廁所需進行工程內容",
+                    "type": "multiple",
+                    "default_selected": ["bathroom_tiles", "bathroom_pipes"],
+                    "options": [
+                        {
+                            "id": "bathroom_tiles",
+                            "name": "新造磁磚項目",
+                            "description": [
+                                "牆身及地台鋪設磁磚",
+                                "包括以英泥沙製作牆身批盪/泥水企缸",
+                                "包防水保護層，以雙組份德國防水物料SIKI107製作"
+                            ],
+                            "price": 0
+                        },
+                        {
+                            "id": "bathroom_pipes",
+                            "name": "新造水喉項目",
+                            "description": [
+                                "洗手盆及企缸冷熱來水喉及去水喉",
+                                "所有來水喉將以英國標準銅喉製作"
+                            ],
+                            "price": 0
+                        },
+                        {
+                            "id": "bathroom_sink",
+                            "name": "2尺洗手盤櫃連石英石枱面",
+                            "description": [
+                                "以美國品牌Formica®富美家防火膠板及夾板制作"
+                            ],
+                            "price": 0
+                        },
+                        {
+                            "id": "bathroom_mirror",
+                            "name": "2尺掛牆儲物鏡櫃",
+                            "description": [
+                                "以美國品牌Formica®富美家防火膠板及夾板制作"
+                            ],
+                            "price": 0
+                        },
+                        {
+                            "id": "bathroom_shower",
+                            "name": "不銹鋼玻璃浴屏",
+                            "description": [
+                                "以不銹鋼及強化玻璃制作"
+                            ],
+                            "price": 0
+                        },
+                        {
+                            "id": "bathroom_ceiling",
+                            "name": "鋁質天花",
+                            "price": 0
+                        },
+                        {
+                            "id": "bathroom_door",
+                            "name": "廁所門連門框",
+                            "description": [
+                                "清拆舊有門連門框",
+                                "以焗漆或木皮夾板制作，包普通門鎖制作"
+                            ],
+                            "price": 0
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "bathroom_keep",
+                "name": "保留原有，不作改動",
+                "price": 0
+            }
+        ]
+    },
+    "kitchen": {
+        "title": "請選擇廚房進行項目",
+        "type": "single",
+        "options": [
+            {
+                "id": "kitchen_full_renovation",
+                "name": "廚房全拆",
+                "description": [
+                    "清拆牆身磁磚/地台磁磚/原有廚櫃及假天花"
+                ],
+                "sub_options": {
+                    "title": "請選擇廚房需進行工程內容",
+                    "type": "multiple",
+                    "default_selected": ["kitchen_tiles", "kitchen_pipes"],
+                    "options": [
+                        {
+                            "id": "kitchen_tiles",
+                            "name": "新造磁磚項目",
+                            "description": [
+                                "牆身及地台鋪設磁磚",
+                                "包括以英泥沙製作牆身批盪",
+                                "包防水保護層，以雙組份德國防水物料SIKI107製作"
+                            ],
+                            "price": 0
+                        },
+                        {
+                            "id": "kitchen_pipes",
+                            "name": "新造水喉項目",
+                            "description": [
+                                "洗菜盆冷熱來水喉/洗衣機冷水喉/去水喉",
+                                "所有來水喉將以英國標準銅喉製作"
+                            ],
+                            "price": 0
+                        },
+                        {
+                            "id": "kitchen_cabinet_6ft",
+                            "name": "6尺廚櫃,地櫃及吊櫃組合連石英石枱面",
+                            "description": [
+                                "包不銹鋼洗菜盤",
+                                "以美國品牌Formica®富美家防火膠板及夾板制作"
+                            ],
+                            "price": 0
+                        },
+                        {
+                            "id": "kitchen_ceiling",
+                            "name": "鋁質天花",
+                            "price": 0
+                        },
+                        {
+                            "id": "kitchen_door",
+                            "name": "廚房門連門框",
+                            "description": [
+                                "清拆舊有門連門框",
+                                "以焗漆或木皮夾板制作，包普通門鎖制作"
+                            ],
+                            "price": 0
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "kitchen_stove_removal",
+                "name": "廚房清拆原有灶台",
+                "sub_options": {
+                    "title": "請選擇廚房需進行工程內容",
+                    "type": "multiple",
+                    "options": [
+                        {
+                            "id": "kitchen_pipes",
+                            "name": "新造水喉項目",
+                            "description": [
+                                "洗菜盆冷熱來水喉/洗衣機冷水喉/去水喉",
+                                "所有來水喉將以英國標準銅喉製作"
+                            ],
+                            "price": 0
+                        },
+                        {
+                            "id": "kitchen_cabinet_8ft",
+                            "name": "8尺廚櫃,地櫃及吊櫃組合連石英石枱面",
+                            "description": [
+                                "包不銹鋼洗菜盤",
+                                "以美國品牌Formica®富美家防火膠板及夾板制作"
+                            ],
+                            "price": 0
+                        },
+                        {
+                            "id": "kitchen_ceiling_options",
+                            "name": "天花工程（二選一）",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "kitchen_ceiling_aluminum",
+                                    "name": "鋁質天花",
+                                    "price": 0
+                                },
+                                {
+                                    "id": "kitchen_ceiling_waterproof",
+                                    "name": "防潮板天花",
+                                    "price": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "kitchen_keep",
+                "name": "保留原有，不作改動",
+                "price": 0
+            }
+        ]
+    },
+    "livingRoom": {
+        "title": "請選擇客廳/房間項目",
+        "type": "single",
+        "options": [
+            {
+                "id": "no_room",
+                "name": "無需間房",
+                "price": 0
+            },
+            {
+                "id": "one_room",
+                "name": "新造房間1間",
+                "price": 0,
+                "sub_options": {
+                    "title": "請選擇房間工程內容",
+                    "type": "multiple",
+                    "options": [
+                        {
+                            "id": "room_partition",
+                            "name": "房間間隔材料(二選一)",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "wood_partition",
+                                    "name": "木板間隔",
+                                    "price": 0
+                                },
+                                {
+                                    "id": "brick_partition",
+                                    "name": "磚材間隔",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "room_floor",
+                            "name": "地台項目(二選一)",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "wood_floor",
+                                    "name": "鋪設木地板",
+                                    "price": 0
+                                },
+                                {
+                                    "id": "tile_floor",
+                                    "name": "鋪設地磚",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "room_paint",
+                            "name": "油漆項目(二選一)",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "new_paint",
+                                    "name": "新做油漆",
+                                    "price": 0
+                                },
+                                {
+                                    "id": "repaint",
+                                    "name": "翻油油漆",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "room_door",
+                            "name": "房門項目(可選)",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "door_frame",
+                                    "name": "房門連門框",
+                                    "price": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "two_rooms",
+                "name": "新造房間2間",
+                "price": 0,
+                "sub_options": {
+                    "title": "請選擇房間工程內容",
+                    "type": "group",
+                    "options": [
+                        {
+                            "id": "room_partition",
+                            "name": "房間間隔材料(二選一)",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "wood_partition",
+                                    "name": "木板間隔",
+                                    "price": 0
+                                },
+                                {
+                                    "id": "brick_partition",
+                                    "name": "磚材間隔",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "room_floor",
+                            "name": "地台項目(二選一)",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "wood_floor",
+                                    "name": "鋪設木地板",
+                                    "price": 0
+                                },
+                                {
+                                    "id": "tile_floor",
+                                    "name": "鋪設地磚",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "room_paint",
+                            "name": "油漆項目(二選一)",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "new_paint",
+                                    "name": "新做油漆",
+                                    "price": 0
+                                },
+                                {
+                                    "id": "repaint",
+                                    "name": "翻油油漆",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "room_door",
+                            "name": "房門項目(可選)",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "door_frame",
+                                    "name": "房門連門框",
+                                    "price": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "three_rooms",
+                "name": "新造房間3間",
+                "price": 0,
+                "sub_options": {
+                    "title": "請選擇房間工程內容",
+                    "type": "group",
+                    "options": [
+                        {
+                            "id": "room_partition",
+                            "name": "房間間隔材料(二選一)",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "wood_partition",
+                                    "name": "木板間隔",
+                                    "price": 0
+                                },
+                                {
+                                    "id": "brick_partition",
+                                    "name": "磚材間隔",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "room_floor",
+                            "name": "地台項目(二選一)",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "wood_floor",
+                                    "name": "鋪設木地板",
+                                    "price": 0
+                                },
+                                {
+                                    "id": "tile_floor",
+                                    "name": "鋪設地磚",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "room_paint",
+                            "name": "油漆項目(二選一)",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "new_paint",
+                                    "name": "新做油漆",
+                                    "price": 0
+                                },
+                                {
+                                    "id": "repaint",
+                                    "name": "翻油油漆",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "room_door",
+                            "name": "房門項目(可選)",
+                            "type": "single",
+                            "options": [
+                                {
+                                    "id": "door_frame",
+                                    "name": "房門連門框",
+                                    "price": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+} 

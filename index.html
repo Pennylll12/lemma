@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工程報價計算機 - 叻媽教室 HK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="images/叻妈logo.png" alt="叻媽教室" class="logo">
+            </div>
+            <h1>工程報價計算機</h1>
+        </header>
+
+        <form id="renovationForm">
+            <!-- 居屋選擇 -->
+            <div class="form-section">
+                <h2>居屋選擇</h2>
+                <div class="form-group">
+                    <label for="propertyType">居屋名稱</label>
+                    <select id="propertyType" required>
+                        <option value="">請選擇居屋名稱</option>
+                    </select>
+                </div>
+                <div id="propertyImage" class="property-image"></div>
+            </div>
+
+            <!-- 廁所項目 -->
+            <div class="form-section bathroom-section" id="bathroomSection">
+                <h2>廁所項目</h2>
+                <h3>請選擇廁所進行項目</h3>
+                <div class="bathroom-options-wrapper">
+                    <div id="bathroomOptions" class="options-container"></div>
+                    <div id="bathroomSubOptions" class="sub-options-container"></div>
+                </div>
+            </div>
+
+            <!-- 廚房項目 -->
+            <div class="form-section kitchen-section" id="kitchenSection">
+                <h2>廚房項目</h2>
+                <h3>請選擇廚房進行項目</h3>
+                <div class="kitchen-options-wrapper">
+                    <div id="kitchenOptions" class="options-container"></div>
+                    <div id="kitchenSubOptions" class="sub-options-container"></div>
+                </div>
+            </div>
+
+            <!-- 客廳/房間項目 -->
+            <div class="form-section living-room-section" id="livingRoomSection">
+                <h2>客廳/房間項目</h2>
+                <h3>請選擇客廳/房間進行項目</h3>
+                <div id="livingRoomOptions" class="options-container"></div>
+                <div id="livingRoomSubOptions" class="sub-options-container"></div>
+            </div>
+
+            <!-- <button type="submit" class="calculate-btn">計算報價</button> -->
+        </form>
+
+        <div id="resultContainer" class="result-container">
+            <h2>報價詳情</h2>
+            <div id="priceDetails" class="price-details"></div>
+            <div id="totalPrice" class="total-price"></div>
+            <button id="downloadQuote" class="download-button">下載報價單</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <style>
+    .result-container {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        display: none;
+    }
+
+    .price-details {
+        margin: 20px 0;
+    }
+
+    .price-detail {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .detail-category {
+        font-weight: bold;
+        color: #495057;
+    }
+
+    .detail-name {
+        color: #6c757d;
+    }
+
+    .detail-price {
+        font-weight: bold;
+        color: #28a745;
+    }
+
+    .total-price {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: right;
+        margin: 20px 0;
+        color: #dc3545;
+    }
+
+    .download-button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .download-button:hover {
+        background-color: #0056b3;
+    }
+    </style>
+</body>
+</html> 
